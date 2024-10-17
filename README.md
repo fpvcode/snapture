@@ -25,9 +25,14 @@ options:
   -f snap_file  path to the snap file
 
 #### Examples
-`python3 snapture.py -m -d ./folder/a -f file.snap` - snap whole file structure inside the `./folder/a` directory to the `file.snap` file.
-`python3 snapture.py -u -d ./folder/b -f file.snap` - restore the file structure from the `file.snap` file to the `./folder/b` directory.
-`python3 snapture.py -l file.snap` - display list of files and directories saved within the `file.snap` file.
+- Snapshot whole file structure inside the `./folder/a` directory to the `file.snap` file:
+```python3 snapture.py -m -d ./folder/a -f file.snap```
+
+- Restore the file structure from the `file.snap` file to the `./folder/b` directory:
+```python3 snapture.py -u -d ./folder/b -f file.snap```
+
+- Display all files and directories saved within the `file.snap` file:
+```python3 snapture.py -l file.snap```
 
 ## Солов'їна
 
@@ -49,11 +54,16 @@ options:
   -m            зробити знімок файлової структури у snap-файл
   -u            відновити файлову структуру зі snap-файлу
   -s            вимкнути строгий режим (намагатись продовжувати розпаковку при невідповідності хешу файлу)
-  -l snap_file  вивести список файлів і каталогів, що зберігаються у snap-файлі
-  -d каталог    шлях до каталогу
+  -l snap_file  вивести список файлів і директорій, що зберігаються у snap-файлі
+  -d директорія шлях до директорії
   -f snap_file  шлях до snap-файлі
 
 #### Приклади
-`python3 snapture.py -m -d ./folder/a -f file.snap` - прив’язати всю файлову структуру всередині каталогу `./folder/a` до файлу `file.snap`.
-`python3 snapture.py -u -d ./folder/b -f file.snap` - відновити файлову структуру з файлу `file.snap` до каталогу `./folder/b`.
-`python3 snapture.py -l file.snap` - відобразити список файлів і каталогів, збережених у файлі `file.snap`.
+- Зробіти знімок усієї файлової структури директорії `./folder/a` у файл `file.snap`:
+```python3 snapture.py -m -d ./folder/a -f file.snap```
+
+- Відновити файлову структуру з файлу `file.snap` до директорії `./folder/b`:
+```python3 snapture.py -u -d ./folder/b -f file.snap```
+
+- Відображення всіх файлів і директорій, збережених у файлі `file.snap`:
+```python3 snapture.py -l file.snap```
