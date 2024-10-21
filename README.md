@@ -3,16 +3,15 @@
 ## English
 
 ### Description
-The **Snapture** script allows you to take snapshots of a file structure, saving it into a single file (snap-file).
-This is something similar to archiving, but without any transformation - the data is stored in its original form.
+The **Snapture** script is for taking snapshots of a file structure into a single file (snap-file). It is similar to archiving but without any compression or transformation.
 
-Key features of the script:
+Key features:
   - Create a snap file from a specified directory.
   - Restore file structure from a snap file to a chosen directory.
   - Preserve information about the owner and access rights in UNIX-like systems.
   - List the files and directories stored in the snap file.
   - Verify file integrity using hash checks.
-  - Optional "strict mode" disable to terminate process on hash error.
+  - *Strict mode* in which recovery is aborted in the event of a hash error.
 
 ### Usage
 options:
@@ -45,16 +44,15 @@ python3 snapture.py -l file.snap
 ## Солов'їна
 
 ### Опис
-Скрипт **Snapture** дозволяє робити знімки файлової структури, зберігаючи її в один файл (snap-файл).
-Це щось схоже на архівування, але без будь-якої трансформації - дані зберігаються в первинному вигляді.
+Скрипт **Snapture** призначений для створення знімків файлової структури в один файл-*знімок*. Це схоже на архівування, але без стиснення чи перетворення.
 
-Основні функції скрипта:
-  - Створення snap-файлу із вказаної директорії.
-  - Відновлення структури файлів із snap-файлу в обрану директорію.
+Основні можливості:
+  - Створення *знімка* вказаної директорії.
+  - Відновлення структури файлів зі *знімка* в обрану директорію.
   - Збереження інформації про власника і права доступу в UNIX-подібних системах.
-  - Виведення списку файлів і директорій, що зберігаються в snap-файлі.
-  - Перевірка цілісності файлів за допомогою хешів.
-  - Опціональне відключення "строгого режиму" для завершення процесу при помилці хешу.
+  - Виведення списку файлів і директорій, що зберігаються у *знімку*.
+  - Перевірка цілісності файлів у *знімку* за допомогою хешів.
+  - *Суворий режим* при якому відновлення переривається при помилці хешу.
 
 ### Використання
 параметри:
